@@ -19,3 +19,6 @@ async def create_product(session: AsyncSession, product_id: ProductCreate) -> Pr
     product = Product(**product_id.model_dump())
     session.add(product)
     await session.commit()
+
+
+##
